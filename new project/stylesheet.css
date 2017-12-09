@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template: 
+    "album album album album " auto
+    " . say about guitar" 10em
+    " . say hope guitar " 10em
+    " . footer footer ." 0.25em/
+    0.5fr 15em 30em auto;
+  grid-gap: 10px;
+  
+ 
+}
+
+.album{
+  grid-area: album ;
+  background-image: url("woodcafe.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.album-p{
+  font-size: 200%
+}
+.say{
+  grid-area: say;
+  padding: 5px;
+  background-color: darkgrey
+  
+}
+
+.about{
+  grid-area: about;
+  
+}
+
+.guitar{
+  grid-area: guitar
+}
+
+
+.hope{
+  grid-area: hope;
+
+}
+
+.footer{
+  grid-area: footer;
+}
+
